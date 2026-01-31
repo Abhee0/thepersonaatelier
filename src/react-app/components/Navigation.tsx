@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router";
+import logo from "@/images/Preview.png";
+
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -13,7 +15,8 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-stone-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="font-serif text-2xl sm:text-4xl text-amber-700 tracking-tight" onClick={closeMenu}>
+        <Link to="/" className="flex items-center gap-3 font-serif text-2xl sm:text-4xl text-amber-700 tracking-tight" onClick={closeMenu}>
+          <img src={logo} alt="The Persona Atelier Logo" className="h-10 w-auto object-contain" />
           The Persona Atelier
         </Link>
 
