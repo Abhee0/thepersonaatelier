@@ -217,6 +217,8 @@ export default function HomePage() {
             <a href="mailto:Mansinimbargi15@gmail.com" className="hover:text-amber-700 transition-colors">Mansinimbargi15@gmail.com</a>
             <span>•</span>
             <a href="https://wa.me/919518944051" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">WhatsApp: +91 9518944051</a>
+            <span>•</span>
+            <a href="https://www.instagram.com/mansi.imagecoach.pro?igsh=MW82bHF6MHExYmRqcA==" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Instagram</a>
           </div>
         </div>
       </footer>

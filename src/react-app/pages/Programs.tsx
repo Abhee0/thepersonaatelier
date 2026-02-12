@@ -79,17 +79,17 @@ export default function ProgramsPage() {
       price: "₹5,499",
       type: "Group Coaching",
       image: m1,
-      description: "Build professional presence through DIY grooming, styling fundamentals, and communication mastery.",
+      description: "A comprehensive foundation for professionals who want to stop being overlooked and start being seen. This module covers the science of first impressions, precision grooming, and the psychology of dressing. You'll learn how to construct a wardrobe that speaks authority, master the art of non-verbal communication, and develop a presence that commands attention in any room—virtual or physical.",
       features: [
-        "DIY grooming essentials",
-        "Dressing & styling fundamentals",
-        "Communication skills training",
-        "First impressions mastery",
-        "Professional presence techniques",
-        "Group coaching sessions",
-        "Practical exercises & feedback"
+        "Strategic grooming & hygiene mastery",
+        "The psychology of color & style",
+        "Building a capsule power wardrobe",
+        "Body language & non-verbal authority",
+        "Virtual presence optimization",
+        "Group coaching & peer feedback",
+        "Actionable style playbooks"
       ],
-      paymentLink: "#",
+      paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Authority%20Accelerator%20program",
       ideal: "New entrepreneurs and professionals seeking foundational presence skills"
     },
@@ -98,17 +98,17 @@ export default function ProgramsPage() {
       price: "₹15,000",
       type: "Personal Color & Styling",
       image: m2,
-      description: "Persona engineering through personalized color analysis, body structure assessment, and signature look creation.",
+      description: "An intensive, personalized engineering of your visual identity. We move beyond generic advice to curate a look that is uniquely yours. accurate personal color analysis to find your power palette, body structure assessment to optimize your silhouette, and a complete wardrobe audit. We align your external aesthetic with your internal ambition, ensuring you look like the leader you aim to be.",
       features: [
-        "Personal color analysis",
-        "Body structure assessment",
-        "Signature look development",
-        "Visual authority building",
-        "Wardrobe optimization",
-        "Personal brand alignment",
-        "One-on-one consultations"
+        "Advanced Personal Color Analysis",
+        "Body shape & structure architectural assessment",
+        "Signature style identification",
+        "Wardrobe edit & gap analysis",
+        "Personal shopping guidance",
+        "Makeup & grooming alignment",
+        "One-on-one strategy sessions"
       ],
-      paymentLink: "#",
+      paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Persona%20Signature%20Program",
       ideal: "Leaders and professionals creating their distinctive identity",
       featured: true
@@ -118,17 +118,17 @@ export default function ProgramsPage() {
       price: "₹25,000",
       type: "Leadership Presence",
       image: m3,
-      description: "Complete leadership transformation through personality assessment, identity clarity, and executive presence mastery.",
+      description: "The ultimate transformation for those at the helm. This is holistic leadership identity construction. We combine executive presence coaching with Neuro-Linguistic Programming (NLP) to rewire limiting beliefs and install unshakable confidence. It's not just about how you look, but how you think, speak, and influence. This is for the leader who is ready to leave a legacy.",
       features: [
-        "Comprehensive personality assessment",
-        "Identity clarity sessions",
-        "Communication & authority training",
-        "Leadership confidence development",
-        "Executive presence coaching",
-        "NLP techniques integration",
-        "Personalized transformation roadmap"
+        "Deep-dive personality & leadership assessment",
+        "Internal identity shift via NLP",
+        "Executive presence & gravitas coaching",
+        "Advanced communication & influence patterns",
+        "Emotional intelligence integration",
+        "Holistic image & brand strategy",
+        "Exclusive 1:1 mentorship"
       ],
-      paymentLink: "#",
+      paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Leadership%20Identity%20Program",
       ideal: "Senior professionals and executives stepping into leadership roles"
     }
