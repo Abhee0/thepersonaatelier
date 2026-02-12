@@ -1,6 +1,8 @@
 import Navigation from "@/react-app/components/Navigation";
 import { Link } from "react-router";
 import profileImg from "@/images/profile.png";
+import ReviewCarousel from "@/react-app/components/ReviewCarousel";
+import Slideshow from "@/react-app/components/Slideshow";
 import { useEffect } from "react";
 
 export default function HomePage() {
@@ -169,6 +171,13 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+
+
+        {/* Review Carousel */}
+        <ReviewCarousel />
+
+        {/* Image Slideshow */}
+        <Slideshow />
 
         {/* Programs Overview CTA */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-stone-900 text-white">

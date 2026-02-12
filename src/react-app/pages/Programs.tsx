@@ -1,5 +1,10 @@
 import Navigation from "@/react-app/components/Navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import m1 from "@/images/models/m1.png";
+import m2 from "@/images/models/m2.png";
+import m3 from "@/images/models/m3.png";
+import m4 from "@/images/models/m4.png";
+import ProgramModal from "@/react-app/components/ProgramModal";
 
 export default function ProgramsPage() {
   useEffect(() => {
@@ -73,6 +78,7 @@ export default function ProgramsPage() {
       name: "The Authority Accelerator",
       price: "₹5,499",
       type: "Group Coaching",
+      image: m1,
       description: "Build professional presence through DIY grooming, styling fundamentals, and communication mastery.",
       features: [
         "DIY grooming essentials",
@@ -91,6 +97,7 @@ export default function ProgramsPage() {
       name: "The Persona Signature Program",
       price: "₹15,000",
       type: "Personal Color & Styling",
+      image: m2,
       description: "Persona engineering through personalized color analysis, body structure assessment, and signature look creation.",
       features: [
         "Personal color analysis",
@@ -110,6 +117,7 @@ export default function ProgramsPage() {
       name: "The Leadership Identity Program",
       price: "₹25,000",
       type: "Leadership Presence",
+      image: m3,
       description: "Complete leadership transformation through personality assessment, identity clarity, and executive presence mastery.",
       features: [
         "Comprehensive personality assessment",
@@ -126,9 +134,18 @@ export default function ProgramsPage() {
     }
   ];
 
+  // State for modal
+  const [selectedProgram, setSelectedProgram] = useState<typeof programs[0] | null>(null);
+
   return (
     <div className="min-h-screen bg-stone-50">
       <Navigation />
+
+      <ProgramModal
+        isOpen={!!selectedProgram}
+        onClose={() => setSelectedProgram(null)}
+        program={selectedProgram}
+      />
 
       <main>
         {/* Hero */}
@@ -152,11 +169,20 @@ export default function ProgramsPage() {
               {programs.map((program, index) => (
                 <div
                   key={index}
-                  className={`bg-white border-2 transition-all duration-300 hover:shadow-2xl ${program.featured
+                  className={`group bg-white border-2 transition-all duration-300 hover:shadow-2xl overflow-hidden ${program.featured
                     ? 'border-amber-700 lg:-mt-8 lg:mb-8'
                     : 'border-stone-200 hover:border-stone-300'
                     }`}
                 >
+                  {/* Image Container */}
+                  <div className="aspect-[4/5] overflow-hidden bg-stone-100">
+                    <img
+                      src={program.image}
+                      alt={program.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+
                   {program.featured && (
                     <div className="bg-amber-700 text-white text-center py-2 text-sm tracking-wide font-medium">
                       MOST POPULAR
@@ -166,10 +192,10 @@ export default function ProgramsPage() {
                   <div className="p-6 sm:p-8 lg:p-10">
                     {/* Header */}
                     <div className="mb-6 sm:mb-8 pb-6 sm:pb-8 border-b border-stone-200">
-                      <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-2">
+                      <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-2 leading-tight">
                         {program.name}
                       </h3>
-                      <p className="text-stone-500 text-xs sm:text-sm tracking-wide mb-4">
+                      <p className="text-stone-500 text-xs sm:text-sm tracking-wide mb-4 font-medium uppercase">
                         {program.type}
                       </p>
                       <div className="flex items-baseline gap-2 mb-4">
@@ -184,7 +210,7 @@ export default function ProgramsPage() {
 
                     {/* Features */}
                     <div className="mb-6 sm:mb-8">
-                      <h4 className="text-xs sm:text-sm tracking-wide text-stone-500 mb-3 sm:mb-4 font-medium">
+                      <h4 className="text-xs sm:text-sm tracking-wide text-stone-500 mb-3 sm:mb-4 font-medium uppercase">
                         WHAT'S INCLUDED
                       </h4>
                       <ul className="space-y-2 sm:space-y-3">
@@ -211,23 +237,23 @@ export default function ProgramsPage() {
 
                     {/* Ideal For */}
                     <div className="mb-6 sm:mb-8 p-3 sm:p-4 bg-stone-50 border border-stone-200">
-                      <p className="text-xs sm:text-sm text-stone-600">
-                        <span className="font-medium text-stone-900">Ideal for: </span>
+                      <p className="text-xs sm:text-sm text-stone-600 italic">
+                        <span className="font-medium text-stone-900 not-italic">Ideal for: </span>
                         {program.ideal}
                       </p>
                     </div>
 
                     {/* CTAs */}
                     <div className="space-y-3">
-                      <a
-                        href={program.paymentLink}
-                        className={`block w-full py-3 sm:py-4 text-center text-sm sm:text-base tracking-wide transition-all duration-300 hover:scale-105 ${program.featured
-                          ? 'bg-amber-700 text-white hover:bg-amber-800'
-                          : 'bg-stone-900 text-white hover:bg-stone-800'
+                      <button
+                        onClick={() => setSelectedProgram(program)}
+                        className={`block w-full py-3 sm:py-4 text-center text-sm sm:text-base tracking-wide transition-all duration-300 transform group-hover:-translate-y-1 ${program.featured
+                          ? 'bg-amber-700 text-white hover:bg-amber-800 shadow-md hover:shadow-lg'
+                          : 'bg-stone-900 text-white hover:bg-stone-800 shadow-md hover:shadow-lg'
                           }`}
                       >
                         PAY & ENROLL NOW
-                      </a>
+                      </button>
                       <a
                         href={program.whatsappLink}
                         target="_blank"
@@ -290,23 +316,41 @@ export default function ProgramsPage() {
         </section>
 
         {/* Investment Philosophy */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-stone-900 mb-6 sm:mb-8 text-center leading-tight">
-              This Is an Investment in<br />Who You Become
-            </h2>
-            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-stone-700 leading-relaxed">
-              <p>
-                These programs are not expenses. They are investments in your professional identity,
-                your earning potential, and your legacy.
-              </p>
-              <p>
-                When you show up with confidence, clarity, and authority, opportunities follow.
-                Clients trust you faster. Partnerships materialize easier. Your income reflects your value.
-              </p>
-              <p className="text-lg sm:text-xl text-stone-900 font-medium">
-                The question is not whether you can afford this. The question is whether you can afford not to.
-              </p>
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1 relative">
+                <div className="aspect-[3/4] bg-stone-100 relative z-10 overflow-hidden transform md:rotate-3 transition-transform hover:rotate-0 duration-700">
+                  <img
+                    src={m4}
+                    alt="Confident professional"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute top-10 -left-10 w-full h-full border-2 border-amber-700/20 z-0 hidden md:block"></div>
+              </div>
+
+              <div className="order-1 md:order-2">
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-stone-900 mb-6 sm:mb-8 leading-tight">
+                  This Is an Investment in<br />
+                  <span className="text-amber-700 italic">Who You Become.</span>
+                </h2>
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-stone-700 leading-relaxed">
+                  <p>
+                    These programs are not expenses. They are investments in your professional identity,
+                    your earning potential, and your legacy.
+                  </p>
+                  <p>
+                    When you show up with confidence, clarity, and authority, opportunities follow.
+                    Clients trust you faster. Partnerships materialize easier. Your income reflects your value.
+                  </p>
+                  <div className="pt-4 border-l-4 border-amber-700 pl-6 my-6">
+                    <p className="text-xl sm:text-2xl text-stone-900 font-serif italic">
+                      "The question is not whether you can afford this. The question is whether you can afford not to."
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
