@@ -179,6 +179,54 @@ export default function HomePage() {
         {/* Image Slideshow */}
         <Slideshow />
 
+        {/* Who This Is For Section */}
+        <section className="py-20 sm:py-28 px-4 sm:px-6 bg-stone-900 text-white">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl mb-12 sm:mb-20 text-center leading-tight">
+              Who This Is For
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+              <div className="bg-stone-800/50 p-8 sm:p-10 rounded-sm border border-stone-700/50">
+                <h3 className="font-serif text-2xl sm:text-3xl mb-8 text-amber-500 text-center md:text-left">Who I Work With</h3>
+                <ul className="space-y-6 text-stone-200">
+                  {[
+                    "New business owners & entrepreneurs",
+                    "Coaches, consultants, trainers & facilitators",
+                    "Professionals transitioning into leadership",
+                    "Individuals who want authority, confidence & a powerful presence"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start group">
+                      <span className="text-amber-500 mr-4 text-xl mt-0.5 transform group-hover:scale-110 transition-transform">✓</span>
+                      <span className="text-base sm:text-lg">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-10 text-lg text-white font-medium border-t border-stone-700 pt-8 italic leading-relaxed">
+                  If you want to upgrade your image, elevate your identity, and strengthen your influence — you’re in the right place.
+                </p>
+              </div>
+
+              <div className="bg-stone-800/50 p-8 sm:p-10 rounded-sm border border-stone-700/50">
+                <h3 className="font-serif text-2xl sm:text-3xl mb-8 text-stone-400 text-center md:text-left">This Is Not For You If:</h3>
+                <ul className="space-y-6 text-stone-400">
+                  {[
+                    "You're looking for quick fixes or surface-level tips",
+                    "You want someone to tell you what to wear without understanding why",
+                    "You're not ready to invest in your professional identity",
+                    "You're looking for motivation rather than transformation",
+                    "You prefer dabbling over committing to real change"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start group">
+                      <span className="mr-4 text-xl mt-0.5 transform group-hover:rotate-90 transition-transform">×</span>
+                      <span className="text-base sm:text-lg">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Programs Overview CTA */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-stone-900 text-white">
           <div className="max-w-4xl mx-auto text-center">

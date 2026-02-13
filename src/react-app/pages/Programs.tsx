@@ -77,17 +77,28 @@ export default function ProgramsPage() {
     {
       name: "The Authority Accelerator",
       price: "₹5,499",
-      type: "Group Coaching",
+      type: "Group Coaching (3-Day Masterclass)",
       image: m1,
-      description: "A comprehensive foundation for professionals who want to stop being overlooked and start being seen. This module covers the science of first impressions, precision grooming, and the psychology of dressing. You'll learn how to construct a wardrobe that speaks authority, master the art of non-verbal communication, and develop a presence that commands attention in any room—virtual or physical.",
+      description: "A powerful group coaching masterclass for new business owners, coaches, consultants, trainers, facilitators, and professionals transitioning into entrepreneurship — designed to help you look confident, feel credible, and present yourself with authority. This program teaches you how to DIY your grooming, makeup, dressing, communication, and professional behavior — so you never feel confused, dependent, or underconfident again.",
       features: [
-        "Strategic grooming & hygiene mastery",
-        "The psychology of color & style",
-        "Building a capsule power wardrobe",
-        "Body language & non-verbal authority",
-        "Virtual presence optimization",
-        "Group coaching & peer feedback",
-        "Actionable style playbooks"
+        "DIY Body Analysis Guide — understand your body shape & proportions",
+        "How to Style Yourself — outfits that suit your role, body & goals",
+        "Color Selection Guide — what colors elevate your skin tone & presence",
+        "Prints, Patterns & Fabrics Guide — what enhances vs distracts",
+        "Accessories Shape Selection — bags, belts, watches, shoes & more",
+        "Complete E-Workbook — your lifelong personal styling & presence manual",
+        "DIY Makeup Basics — everyday professional makeup made simple",
+        "Business & Tea Etiquette Training — confident social & professional conduct",
+        "How to Build a Powerful First Impression — instantly earn respect & trust",
+        "How to Start Conversations Confidently — break the ice with ease",
+        "Show Up as a Credible Professional — speak, act & present with authority"
+      ],
+      painPoints: [
+        "Feel confused about how to dress or present yourself",
+        "Depend on others for grooming, makeup or styling",
+        "Feel awkward while meeting clients or new people",
+        "Struggle to start conversations confidently",
+        "Be overlooked, underestimated or taken lightly"
       ],
       paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Authority%20Accelerator%20program",
@@ -98,15 +109,28 @@ export default function ProgramsPage() {
       price: "₹15,000",
       type: "Personal Color & Styling",
       image: m2,
-      description: "An intensive, personalized engineering of your visual identity. We move beyond generic advice to curate a look that is uniquely yours. accurate personal color analysis to find your power palette, body structure assessment to optimize your silhouette, and a complete wardrobe audit. We align your external aesthetic with your internal ambition, ensuring you look like the leader you aim to be.",
+      description: "Turn heads. Elevate your persona. Become visually unforgettable. A premium 4-session transformation program designed to align your colors, body structure, wardrobe, grooming, and overall presence — so your appearance reflects confidence, credibility, and high-value identity.",
       features: [
-        "Advanced Personal Color Analysis",
-        "Body shape & structure architectural assessment",
-        "Signature style identification",
-        "Wardrobe edit & gap analysis",
-        "Personal shopping guidance",
-        "Makeup & grooming alignment",
-        "One-on-one strategy sessions"
+        "Personal Color Analysis & Curated Palette — colors that enhance your glow & authority",
+        "Body Shape Assessment & Styling Strategy — silhouettes that flatter & empower",
+        "Wardrobe Audit & Upgrade — aligned with your profession & desired presence",
+        "Grooming & Makeup Guidance — for office, parties & special occasions",
+        "One-Time Personal Shopping Assistance — curated & purposeful buys",
+        "Handpicked Accessories Guide — customized for your business & profession",
+        "Turning-Heads Image Upgrade — look confident, premium & magnetic",
+        "Confidence Boost & Styling Support — for the next 2 months"
+      ],
+      outcomes: [
+        "People notice you the moment you enter a room",
+        "You look polished, premium & naturally confident",
+        "Your visual persona supports your authority & credibility",
+        "You feel proud, empowered & aligned in your appearance"
+      ],
+      painPoints: [
+        "Wear colors that dull your glow",
+        "Feel invisible or overlooked in social or professional spaces",
+        "Feel confused about what suits your body or profession",
+        "Second-guess your appearance before stepping out"
       ],
       paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Persona%20Signature%20Program",
@@ -118,15 +142,24 @@ export default function ProgramsPage() {
       price: "₹25,000",
       type: "Leadership Presence",
       image: m3,
-      description: "The ultimate transformation for those at the helm. This is holistic leadership identity construction. We combine executive presence coaching with Neuro-Linguistic Programming (NLP) to rewire limiting beliefs and install unshakable confidence. It's not just about how you look, but how you think, speak, and influence. This is for the leader who is ready to leave a legacy.",
+      description: "Become the leader, entrepreneur, or authority figure you aspire to be. A structured personality assessment & leadership presence program that helps you define your identity, sharpen your communication, build confidence, and step fully into leadership or entrepreneurship.",
       features: [
-        "Deep-dive personality & leadership assessment",
-        "Internal identity shift via NLP",
-        "Executive presence & gravitas coaching",
-        "Advanced communication & influence patterns",
-        "Emotional intelligence integration",
-        "Holistic image & brand strategy",
-        "Exclusive 1:1 mentorship"
+        "Personality & leadership style assessment",
+        "Identity & personal positioning clarity",
+        "Confidence, mindset & authority building",
+        "Communication, influence & presence training",
+        "Vision setting for leadership or entrepreneurial roles"
+      ],
+      outcomes: [
+        "You speak with confidence & command respect",
+        "People see you as a leader — even before you claim the title",
+        "You feel aligned with the person you want to become"
+      ],
+      painPoints: [
+        "Doubt your potential or second-guess yourself",
+        "Feel stuck in an old identity or comfort zone",
+        "Feel invisible in leadership spaces",
+        "Struggle to express authority or influence"
       ],
       paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Leadership%20Identity%20Program",
@@ -162,111 +195,134 @@ export default function ProgramsPage() {
           </div>
         </section>
 
-        {/* Programs Grid */}
-        <section className="py-12 sm:py-16 px-4 sm:px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-              {programs.map((program, index) => (
-                <div
-                  key={index}
-                  className={`group bg-white border-2 transition-all duration-300 hover:shadow-2xl overflow-hidden ${program.featured
-                    ? 'border-amber-700 lg:-mt-8 lg:mb-8'
-                    : 'border-stone-200 hover:border-stone-300'
-                    }`}
-                >
-                  {/* Image Container */}
-                  <div className="aspect-[4/5] overflow-hidden bg-stone-100">
+        {/* Programs List */}
+        <section className="py-12 sm:py-20 px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto space-y-24 sm:space-y-32">
+            {programs.map((program, index) => (
+              <div
+                key={index}
+                className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-start`}
+              >
+                {/* Image Side */}
+                <div className="w-full lg:w-1/2 relative">
+                  <div className="aspect-[3/4] sticky top-24">
+                    <div className="absolute inset-0 bg-stone-200 transform translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4"></div>
                     <img
                       src={program.image}
                       alt={program.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="relative w-full h-full object-cover shadow-lg"
                     />
+                    {program.featured && (
+                      <div className="absolute top-4 left-4 bg-amber-700 text-white px-4 py-1 text-sm tracking-widest font-medium uppercase shadow-md">
+                        Most Popular
+                      </div>
+                    )}
                   </div>
+                </div>
 
-                  {program.featured && (
-                    <div className="bg-amber-700 text-white text-center py-2 text-sm tracking-wide font-medium">
-                      MOST POPULAR
-                    </div>
-                  )}
-
-                  <div className="p-6 sm:p-8 lg:p-10">
-                    {/* Header */}
-                    <div className="mb-6 sm:mb-8 pb-6 sm:pb-8 border-b border-stone-200">
-                      <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-2 leading-tight">
+                {/* Content Side */}
+                <div className="w-full lg:w-1/2">
+                  <div className="space-y-6">
+                    <div>
+                      <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-stone-900 mb-2 leading-tight">
                         {program.name}
-                      </h3>
-                      <p className="text-stone-500 text-xs sm:text-sm tracking-wide mb-4 font-medium uppercase">
+                      </h2>
+                      <p className="text-amber-700 text-sm sm:text-base tracking-widest font-medium uppercase mb-4">
                         {program.type}
                       </p>
-                      <div className="flex items-baseline gap-2 mb-4">
-                        <span className="font-serif text-4xl sm:text-5xl text-stone-900">
-                          {program.price}
-                        </span>
+                      <div className="text-3xl sm:text-4xl font-serif text-stone-900">
+                        {program.price}
                       </div>
-                      <p className="text-sm sm:text-base text-stone-700 leading-relaxed">
-                        {program.description}
-                      </p>
                     </div>
 
+                    <p className="text-lg text-stone-700 leading-relaxed border-l-2 border-amber-700 pl-4">
+                      {program.description}
+                    </p>
+
                     {/* Features */}
-                    <div className="mb-6 sm:mb-8">
-                      <h4 className="text-xs sm:text-sm tracking-wide text-stone-500 mb-3 sm:mb-4 font-medium uppercase">
-                        WHAT'S INCLUDED
+                    <div className="bg-stone-50 p-6 sm:p-8 rounded-sm border border-stone-100">
+                      <h4 className="text-sm font-bold text-stone-900 tracking-wide uppercase mb-6 flex items-center gap-2">
+                        <span className="w-8 h-[1px] bg-stone-900"></span>
+                        What's Included
                       </h4>
-                      <ul className="space-y-2 sm:space-y-3">
+                      <ul className="space-y-3">
                         {program.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start text-sm sm:text-base text-stone-700">
-                            <svg
-                              className="w-4 h-4 sm:w-5 sm:h-5 text-amber-700 mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                            <span>{feature}</span>
+                          <li key={idx} className="flex items-start text-stone-700">
+                            <span className="text-amber-700 mr-3 mt-1">✔</span>
+                            <span className="text-sm sm:text-base">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
+                    {/* Outcomes */}
+                    {/* @ts-ignore */}
+                    {program.outcomes && (
+                      <div className="bg-amber-50/50 p-6 sm:p-8 rounded-sm border border-amber-100">
+                        <h4 className="text-sm font-bold text-amber-900 tracking-wide uppercase mb-6 flex items-center gap-2">
+                          <span className="w-8 h-[1px] bg-amber-900"></span>
+                          Your Transformation
+                        </h4>
+                        <ul className="space-y-3">
+                          {/* @ts-ignore */}
+                          {program.outcomes.map((outcome, idx) => (
+                            <li key={idx} className="flex items-start text-stone-800">
+                              <span className="text-amber-600 mr-3 text-lg">✦</span>
+                              <span className="text-sm sm:text-base font-medium">{outcome}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Pain Points */}
+                    {/* @ts-ignore */}
+                    {program.painPoints && (
+                      <div>
+                        <h4 className="text-sm font-bold text-stone-500 tracking-wide uppercase mb-4 mt-8">
+                          After this, you will NO LONGER:
+                        </h4>
+                        <ul className="space-y-2">
+                          {/* @ts-ignore */}
+                          {program.painPoints.map((point, idx) => (
+                            <li key={idx} className="flex items-start text-stone-600">
+                              <span className="text-red-400 mr-3 text-xs mt-1">❌</span>
+                              <span className="text-sm sm:text-base">{point}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
                     {/* Ideal For */}
-                    <div className="mb-6 sm:mb-8 p-3 sm:p-4 bg-stone-50 border border-stone-200">
-                      <p className="text-xs sm:text-sm text-stone-600 italic">
-                        <span className="font-medium text-stone-900 not-italic">Ideal for: </span>
+                    <div className="pt-6 border-t border-stone-200">
+                      <p className="text-stone-600 italic">
+                        <span className="font-medium text-stone-900 not-italic uppercase text-xs tracking-wide block mb-1">Ideal For</span>
                         {program.ideal}
                       </p>
                     </div>
 
                     {/* CTAs */}
-                    <div className="space-y-3">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
                       <button
                         onClick={() => setSelectedProgram(program)}
-                        className={`block w-full py-3 sm:py-4 text-center text-sm sm:text-base tracking-wide transition-all duration-300 transform group-hover:-translate-y-1 ${program.featured
-                          ? 'bg-amber-700 text-white hover:bg-amber-800 shadow-md hover:shadow-lg'
-                          : 'bg-stone-900 text-white hover:bg-stone-800 shadow-md hover:shadow-lg'
-                          }`}
+                        className="flex-1 bg-stone-900 text-white py-4 px-8 text-center text-sm tracking-widest hover:bg-stone-800 transition-colors uppercase font-medium"
                       >
-                        PAY & ENROLL NOW
+                        Enroll Now
                       </button>
                       <a
                         href={program.whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full py-3 sm:py-4 text-center border-2 border-stone-900 text-stone-900 text-sm sm:text-base tracking-wide hover:bg-stone-900 hover:text-white transition-all duration-300"
+                        className="flex-1 border border-stone-300 text-stone-900 py-4 px-8 text-center text-sm tracking-widest hover:bg-stone-50 transition-colors uppercase font-medium flex items-center justify-center gap-2"
                       >
-                        CHAT ON WHATSAPP
+                        <span>WhatsApp Chat</span>
                       </a>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
 
