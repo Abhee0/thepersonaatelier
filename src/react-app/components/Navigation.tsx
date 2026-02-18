@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router";
-import logo from "@/images/Preview.png";
+import logo from "@/images/logo.png";
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";

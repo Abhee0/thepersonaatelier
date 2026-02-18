@@ -4,6 +4,7 @@ import m1 from "@/images/models/m1.png";
 import m2 from "@/images/models/m2.png";
 import m3 from "@/images/models/m3.png";
 import m4 from "@/images/models/m4.png";
+import m5 from "@/images/models/m5.png";
 import ProgramModal from "@/react-app/components/ProgramModal";
 
 export default function ProgramsPage() {
@@ -164,6 +165,40 @@ export default function ProgramsPage() {
       paymentLink: "https://razorpay.me/@mansiimageconsultant",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Leadership%20Identity%20Program",
       ideal: "Senior professionals and executives stepping into leadership roles"
+    },
+    {
+      name: "The Virtual Signature Transformation",
+      price: "₹7,500",
+      type: "Complete Image + Shopping Alignment Experience",
+      image: m5,
+      description: "100% Online. 100% Personalized. 100% Transformational. This is not basic consultation. This is a complete digital image reinvention — from clarity to confident execution.",
+      features: [
+        "Deep Image Assessment (Live Zoom – 3 Sessions) — Color, Body, Face, Style & Brand",
+        "Personalized Digital Style Dossier (PDF) — Your unique blueprint for colors, fabrics & style",
+        "Virtual Wardrobe Refinement — Keeping what works & creating 15–20 ready outfits",
+        "Personalized Shopping Blueprint — Exact categories, budget strategy & investment clarity",
+        "1 Live Virtual Shopping Session (60 mins) — Guided shopping for clarity & confidence",
+        "30 Days Post-Transformation Support — Outfit approvals, styling guidance & confidence check-ins"
+      ],
+      outcomes: [
+        "Clear understanding of what suits you",
+        "Faster dressing with intention",
+        "Strong personal brand presence",
+        "Elevated everyday style",
+        "Smart, structured shopping",
+        "Zero guesswork"
+      ],
+      painPoints: [
+        "Wasting money on wrong colors",
+        "Buying clothes that stay unused",
+        "Emotional shopping",
+        "Style confusion",
+        "Looking washed out in photos",
+        "Feeling “nothing suits me”"
+      ],
+      paymentLink: "https://razorpay.me/@mansiimageconsultant",
+      whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Virtual%20Signature%20Transformation",
+      ideal: "Professionals worldwide seeking a complete remote image transformation"
     }
   ];
 

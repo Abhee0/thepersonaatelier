@@ -16,6 +16,21 @@ import pro7 from "@/images/pro_7.png";
 import pro2_2 from "@/images/pro_2_2.png";
 import pro2_3 from "@/images/pro_2_3.png";
 
+// Client Stories
+import c1 from "@/images/cilentpic/c1.png";
+import c2 from "@/images/cilentpic/c2.png";
+import c3 from "@/images/cilentpic/c3.png";
+import c4 from "@/images/cilentpic/c4.png";
+import c5 from "@/images/cilentpic/c5.png";
+import c6 from "@/images/cilentpic/c6.png";
+import c7 from "@/images/cilentpic/c7.png";
+import c8 from "@/images/cilentpic/c8.png";
+import c9 from "@/images/cilentpic/c9.png";
+import c10 from "@/images/cilentpic/c10.png";
+import c11 from "@/images/cilentpic/c11.png";
+import n2 from "@/images/slideshow/N2.png";
+import n3 from "@/images/slideshow/N3.png";
+
 export default function ProofPage() {
   useEffect(() => {
     document.title = "Client Success & Certificates | The Persona Atelier";
@@ -122,7 +137,7 @@ export default function ProofPage() {
               Credentials & Experience
             </h1>
             <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-              Over 5 years of transforming how leaders show up, communicate, and command presence.
+              Over 6 years of transforming how leaders show up, communicate, Transformed 3500+ students & 40 + individuals.
             </p>
           </div>
         </section>
@@ -145,7 +160,7 @@ export default function ProofPage() {
 
             <div className="bg-stone-50 p-8 md:p-12 border-l-4 border-amber-800 shadow-sm my-16 mx-4 sm:mx-0">
               <p className="font-serif text-2xl sm:text-3xl text-stone-800 italic text-center leading-relaxed">
-                "Over the past 5+ years, I have consulted and transformed 40+ clients, trained professionals, entrepreneurs, corporates, and institutions — helping them be seen, heard, respected, and remembered."
+                "Over the past 6+ years, I have consulted and transformed 40+ clients, trained professionals, entrepreneurs, corporates, and institutions — helping them be seen, heard, respected, and remembered."
               </p>
             </div>
 
@@ -219,6 +234,48 @@ export default function ProofPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Client Stories */}
+        <section className="py-16 sm:py-24 px-6 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl text-stone-900 mb-16 text-center">
+              Client Stories
+            </h2>
+            <div className="masonry-grid sm:masonry-2-col lg:masonry-3-col gap-8">
+              {[c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, n2, n3].map((img, index) => (
+                <div key={index} className="break-inside-avoid mb-8 rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                  <img
+                    src={img}
+                    alt={`Client story ${index + 1}`}
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Fallback grid for browsers without masonry support */}
+            <style>{`
+              @supports not (grid-template-rows: masonry) {
+                .masonry-grid {
+                  display: columns;
+                  column-gap: 2rem;
+                }
+                .sm\\:masonry-2-col {
+                  column-count: 2;
+                }
+                .lg\\:masonry-3-col {
+                  column-count: 3;
+                }
+                 /* Mobile fallback to single column */
+                @media (max-width: 640px) {
+                  .masonry-grid {
+                     column-count: 1;
+                  }
+                }
+              }
+            `}</style>
           </div>
         </section>
 

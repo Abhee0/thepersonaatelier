@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import profileImg from "@/images/profile.png";
 import ReviewCarousel from "@/react-app/components/ReviewCarousel";
 import Slideshow from "@/react-app/components/Slideshow";
+import YouTubeShorts from "@/react-app/components/YouTubeShorts";
 import { useEffect } from "react";
 
 export default function HomePage() {
@@ -121,6 +122,7 @@ export default function HomePage() {
                       <p className="text-base sm:text-lg tracking-wide leading-relaxed font-medium text-stone-800">
                         SPECIALIZING IN <span className="text-amber-700">STYLE, CONFIDENCE, AND PRESENCE</span>,
                         I EMPOWER CLIENTS TO ENHANCE THEIR PERSONAL AND PROFESSIONAL IMAGE.
+                        TRANSFORMED 3500+ STUDENTS & 40+ BUISNESS OWNERS AND INDIVIDUALS TO BE MORE CONFIDENT.
                       </p>
                       <div className="mt-6 flex items-center gap-2">
                         <div className="h-px flex-1 bg-stone-200"></div>
@@ -178,6 +180,9 @@ export default function HomePage() {
 
         {/* Image Slideshow */}
         <Slideshow />
+
+        {/* YouTube Shorts */}
+        <YouTubeShorts />
 
         {/* Who This Is For Section */}
         <section className="py-20 sm:py-28 px-4 sm:px-6 bg-stone-900 text-white">
