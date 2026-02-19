@@ -33,7 +33,7 @@ export default function YouTubeShorts() {
 
                 <div className="text-center mt-12">
                     <a
-                        href="https://www.youtube.com/@ThePersonaAtelier"
+                        href="http://www.youtube.com/@mansinimbargi"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block text-amber-700 font-medium border-b-2 border-amber-700 hover:text-amber-800 hover:border-amber-800 transition-colors tracking-wide"
