@@ -17,19 +17,19 @@ import pro2_2 from "@/images/pro_2_2.png";
 import pro2_3 from "@/images/pro_2_3.png";
 
 // Client Stories
-import c1 from "@/images/cilentpic/c1.png";
-import c2 from "@/images/cilentpic/c2.png";
-import c3 from "@/images/cilentpic/c3.png";
-import c4 from "@/images/cilentpic/c4.png";
-import c5 from "@/images/cilentpic/c5.png";
-import c6 from "@/images/cilentpic/c6.png";
-import c7 from "@/images/cilentpic/c7.png";
-import c8 from "@/images/cilentpic/c8.png";
-import c9 from "@/images/cilentpic/c9.png";
-import c10 from "@/images/cilentpic/c10.png";
-import c11 from "@/images/cilentpic/c11.png";
-import n2 from "@/images/slideshow/N2.png";
-import n3 from "@/images/slideshow/N3.png";
+import c1 from "@/images/cilentpic/c1.webp";
+import c2 from "@/images/cilentpic/c2.webp";
+import c3 from "@/images/cilentpic/c3.webp";
+import c4 from "@/images/cilentpic/c4.webp";
+import c5 from "@/images/cilentpic/c5.webp";
+import c6 from "@/images/cilentpic/c6.webp";
+import c7 from "@/images/cilentpic/c7.webp";
+import c8 from "@/images/cilentpic/c8.webp";
+import c9 from "@/images/cilentpic/c9.webp";
+import c10 from "@/images/cilentpic/c10.webp";
+import c11 from "@/images/cilentpic/c11.webp";
+import n2 from "@/images/slideshow/N2.webp";
+import n3 from "@/images/slideshow/N3.webp";
 
 export default function ProofPage() {
   useEffect(() => {

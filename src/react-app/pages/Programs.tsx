@@ -1,10 +1,10 @@
 import Navigation from "@/react-app/components/Navigation";
 import { useEffect, useState } from "react";
-import m1 from "@/images/models/m1.png";
-import m2 from "@/images/models/m2.png";
-import m3 from "@/images/models/m3.png";
-import m4 from "@/images/models/m4.png";
-import m5 from "@/images/models/m5.png";
+import m1 from "@/images/models/m1.webp";
+import m2 from "@/images/models/m2.webp";
+import m3 from "@/images/models/m3.webp";
+import m4 from "@/images/models/m4.webp";
+import m5 from "@/images/models/m5.webp";
 import ProgramModal from "@/react-app/components/ProgramModal";
 
 export default function ProgramsPage() {
