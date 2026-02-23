@@ -101,7 +101,7 @@ export default function ProgramsPage() {
         "Struggle to start conversations confidently",
         "Be overlooked, underestimated or taken lightly"
       ],
-      paymentLink: "https://razorpay.me/@mansiimageconsultant",
+      paymentLink: "https://rzp.io/rzp/BFjmEQf",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Authority%20Accelerator%20program",
       ideal: "New entrepreneurs and professionals seeking foundational presence skills"
     },
@@ -133,7 +133,7 @@ export default function ProgramsPage() {
         "Feel confused about what suits your body or profession",
         "Second-guess your appearance before stepping out"
       ],
-      paymentLink: "https://razorpay.me/@mansiimageconsultant",
+      paymentLink: "https://rzp.io/rzp/uncyOeXY",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Persona%20Signature%20Program",
       ideal: "Leaders and professionals creating their distinctive identity",
       featured: true
@@ -162,7 +162,7 @@ export default function ProgramsPage() {
         "Feel invisible in leadership spaces",
         "Struggle to express authority or influence"
       ],
-      paymentLink: "https://razorpay.me/@mansiimageconsultant",
+      paymentLink: "https://rzp.io/rzp/QV5YHML",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Leadership%20Identity%20Program",
       ideal: "Senior professionals and executives stepping into leadership roles"
     },
@@ -196,7 +196,7 @@ export default function ProgramsPage() {
         "Looking washed out in photos",
         "Feeling “nothing suits me”"
       ],
-      paymentLink: "https://razorpay.me/@mansiimageconsultant",
+      paymentLink: "https://rzp.io/rzp/IQLzjgg8",
       whatsappLink: "https://wa.me/919518944051?text=I'm%20interested%20in%20The%20Virtual%20Signature%20Transformation",
       ideal: "Professionals worldwide seeking a complete remote image transformation"
     }
