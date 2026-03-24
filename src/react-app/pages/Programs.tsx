@@ -92,7 +92,8 @@ export default function ProgramsPage() {
         "Business & Tea Etiquette Training — confident social & professional conduct",
         "How to Build a Powerful First Impression — instantly earn respect & trust",
         "How to Start Conversations Confidently — break the ice with ease",
-        "Show Up as a Credible Professional — speak, act & present with authority"
+        "Show Up as a Credible Professional — speak, act & present with authority",
+        "Brand Photography & Social Media Content Creation — You've built the business. Now it's time your appearance reflects the authority you already are. Three days Complete style, colour, wardrobe, presence and confidence transformation — Live on Zoom."
       ],
       painPoints: [
         "Feel confused about how to dress or present yourself",
