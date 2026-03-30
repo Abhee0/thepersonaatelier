@@ -82,6 +82,9 @@ export default function ProgramsPage() {
       image: m1,
       description: "A powerful group coaching masterclass for new business owners, coaches, consultants, trainers, facilitators, and professionals transitioning into entrepreneurship — designed to help you look confident, feel credible, and present yourself with authority. This program teaches you how to DIY your grooming, makeup, dressing, communication, and professional behavior — so you never feel confused, dependent, or underconfident again.",
       features: [
+        "The Authority Codex — the exact framework to position yourself as a high-value, premium professional",
+        "Business Blueprint for Coaches & Consultants — step-by-step structure to build, position & scale your expertise",
+        "How to Use ChatGPT for Your Business — create content, offers, messaging & client attraction strategies effortlessly",
         "DIY Body Analysis Guide — understand your body shape & proportions",
         "How to Style Yourself — outfits that suit your role, body & goals",
         "Color Selection Guide — what colors elevate your skin tone & presence",
@@ -93,7 +96,9 @@ export default function ProgramsPage() {
         "How to Build a Powerful First Impression — instantly earn respect & trust",
         "How to Start Conversations Confidently — break the ice with ease",
         "Show Up as a Credible Professional — speak, act & present with authority",
-        "Brand Photography & Social Media Content Creation — You've built the business. Now it's time your appearance reflects the authority you already are. Three days Complete style, colour, wardrobe, presence and confidence transformation — Live on Zoom."
+        "Brand Photography & Social Media Content Creation — align your visual identity with your personal brand",
+        "You’ve built the business. Now it’s time your appearance reflects the authority you already are.",
+        "3 Days Complete Style, Colour, Wardrobe, Presence & Confidence Transformation — Live on Zoom"
       ],
       painPoints: [
         "Feel confused about how to dress or present yourself",
